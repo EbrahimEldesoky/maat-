@@ -1,0 +1,49 @@
+# ==========================================
+#  maat (ماعت) - Git Ignore Configuration
+# ==========================================
+
+# --- Environment & Secret Keys ---
+.env
+.env.*
+!.env.example
+
+# --- Rust Build & Cargo Artifacts ---
+/target
+Cargo.lock.bak
+**/*.rs.bk
+
+# --- Local Databases & Data Persistence ---
+maat_memory.json
+maat_vectors.json
+*.db
+*.sqlite
+*.sqlite3
+
+# --- Evolution API Session & Database Volumes ---
+evolution_api/evolution_pgdata/
+evolution_api/evolution_instances/
+evolution_api/evolution_store/
+
+# --- Temporary Files & Media Audio/Voice ---
+/tmp/
+*.ogg
+*.mp3
+*.wav
+*.m4a
+*.log
+
+# --- Python / Node Virtual Envs & Dependencies ---
+.venv/
+venv/
+node_modules/
+package-lock.json
+
+# --- IDEs & OS Specific ---
+.vscode/
+.idea/
+.DS_Store
+*.swp
+*.swo
+*~
+.gemini/
+.agents/
